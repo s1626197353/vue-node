@@ -1,0 +1,36 @@
+node后端+vue
+
+用户端
+http://localhost:9001/api/xxx
+http://localhost:9001/api/goods/home  //get方式
+http://localhost:9001/api/goods/follow
+http://localhost:9001/api/goods/column
+http://localhost:9001/api/goods/.....
+
+http://localhost:9001/api/login
+http://localhost:9001/api/reg   //post方式
+http://localhost:9001/api/user	//get
+http://localhost:9001/api/logout
+
+
+//增加博文，home为动态参数
+http://localhost:9001/api/addhome
+//查询hello编写的博文，home和hello动态，参数只传limit，其余接口参数未定义
+http://localhost:9001/api/myarticle/home/hello?limit=2 
+
+	参数携带
+
+	接口名?_page=xx&_limit=xx&q=xx&sort=xx
+
+	  _page:0,
+	  _limit:10,
+	  q:'',//搜索关键字
+	  _sort:'time',
+
+管理端
+http://localhost:9001/admin
+http://localhost:9001/admin/login
+http://localhost:9001/admin/logout
+
+后端代理
+http://localhost:9001/proxy/juhe
